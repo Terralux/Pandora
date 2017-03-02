@@ -1,0 +1,41 @@
+# =============== #
+# Unity generated #
+# =============== #
+Pandora/[Tt]emp/
+Pandora/[Oo]bj/
+Pandora/[Bb]uilds/
+Pandora/[Ll]ibrary/
+Pandora/[Ll]ibrary_ANDROID/
+Pandora/[Ll]ibrary_PC/
+Pandora/[Ll]ibrary_IOS/
+Pandora/sysinfo.txt
+Pandora/UnityVS/
+Pandora/UnityVS.meta
+Pandora/LightingData*
+Pandora/ReflectionProbe*
+Pandora/Assets/Scenes/Personal Scenes*
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+Pandora/[Ee]xported[Oo]bj/
+Pandora/*.userprefs
+Pandora/*.csproj
+Pandora/*.pidb
+Pandora/*.suo
+Pandora/*.sln*
+Pandora/*.user
+Pandora/*.unityproj
+Pandora/*.booproj
+
+# ============
+# OS generated
+# ============
+Pandora/.DS_Store
+Pandora/.DS_Store?
+Pandora/._*
+Pandora/.Spotlight-V100
+Pandora/.Trashes
+Pandora/ehthumbs.db
+Pandora/Thumbs.db
+Thumbs.db.meta
