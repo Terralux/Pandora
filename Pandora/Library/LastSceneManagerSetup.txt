@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/MyAppLevel.unity
+- path: Assets/PandoraTest.unity
   isLoaded: 1
   isActive: 1
