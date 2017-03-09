@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/PandoraTest.unity
+- path: Assets/Vir_Pan_SkySetup.unity
   isLoaded: 1
   isActive: 1
