@@ -23,7 +23,10 @@ public class TriggerAnimationEvent : BaseEvent {
 	public override void Action ()
 	{
 		anim.SetTrigger (triggerName);
-		StartCoroutine (WaitForExplosion ());
+
+		if (animToWaitFor) {
+			StartCoroutine (WaitForExplosion ());
+		}
 	}
 
 	#endregion
