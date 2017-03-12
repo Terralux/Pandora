@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TriggerSphereFade : MonoBehaviour {
-	public void Trigger(){
+	public void TriggerSphereFading(){
 		Toolbox.FindRequiredComponent<EventSystem> ().PlayNextEvent ();
 	}
 }

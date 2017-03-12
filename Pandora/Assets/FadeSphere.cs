@@ -18,6 +18,7 @@ public class FadeSphere : BaseEvent {
 		if (isFading) {
 			currentFadeValue -= Time.deltaTime/fadeSlowDownFactor;
 			GetComponent<MeshRenderer> ().material.color = new Color (0, 0, 0, currentFadeValue);
+
 			if (currentFadeValue <= 0.05f) {
 				Toolbox.FindRequiredComponent<EventSystem> ().PlayNextEvent ();
 				Destroy (gameObject);
