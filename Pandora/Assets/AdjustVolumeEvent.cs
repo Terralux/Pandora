@@ -5,29 +5,25 @@ using UnityEngine;
 public class AdjustVolumeEvent : BaseEvent {
 
 	public float volumeLevel = 0.1f;
+	private AudioSource audioSource;
 
 	#region implemented abstract members of BaseEvent
 	public override void Action ()
 	{
-		Invoke ("StartMyCoroutine", 15f);
-
+		StartCoroutine (AdjustSoundLevel ());
 	}
 	#endregion
 
-	void StartMyCoroutine(){
-		StartCoroutine (AdjustSoundLevel ());
-	}
-
-	// Use this for initialization
 	void Awake () {
+		audioSource = GetComponent<AudioSource> ();
 		Toolbox.RegisterEvent<AdjustVolumeEvent> (this);
 	}
 
 	IEnumerator AdjustSoundLevel(){
 		yield return new WaitForSeconds (0.01f);
-		GetComponent<AudioSource> ().volume -= 0.01f;
+		audioSource.volume += (volumeLevel - audioSource.volume) * 0.01f;
 
-		if (GetComponent<AudioSource> ().volume > volumeLevel) {
+		if (audioSource.volume - 0.02f >= volumeLevel) {
 			StartCoroutine (AdjustSoundLevel ());
 		}
 	}
